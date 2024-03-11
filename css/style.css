@@ -1,0 +1,291 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navigator Section */
+
+.Nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    z-index: 2;
+}
+
+.Line-cont{
+    position: absolute;
+    width: 30px;
+    left: 40px;
+    top: 0;
+}
+.Line-cont > div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Line-div{
+    height: 191px;
+    background: gray;
+    width: 1.5px;
+    margin: 0 auto;
+}
+
+.Line-Img{
+    height: 28px;
+    width: 28px;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.Line-Img:hover{
+    transform: scale(110%);
+}
+
+.Line-Img div{
+    width: 28px;
+    height: 28px;
+}
+
+.github{
+    background: url(Images/github_white.svg) no-repeat;
+}
+
+.discord{
+    background: url(Images/discord_white.svg) no-repeat;
+}
+
+.twitter{
+    background: url(Images/medium_white.svg) no-repeat;
+}
+
+.Logo_Image{
+    opacity: 0.8;
+    margin-left: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    height: 45px;
+}
+
+.Logo_Image > a{
+    max-width: 100px;
+    position: relative;
+}
+
+.Logo-O, .Logo-O_back{
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.Logo-O{
+    background: url(Logo/logo.svg) no-repeat;
+}
+
+.Logo-O:hover{
+    left: 7px;
+}
+
+.Logo-O_back{
+    background: url(Logo/logo_back.svg) no-repeat;
+}
+
+
+.Nav-links{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    background: none;
+    margin-right: 150px;
+    margin-left: auto;
+}
+
+.Nav-links > li{
+    list-style: none;
+    background: none;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Nav-links > li > a{
+    color: rgb(188, 186, 186);
+    cursor: pointer;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.anchorLine{
+    width: 0%;
+    height: 1px;
+    background: rgb(188, 186, 186);
+    margin: auto;
+    transition: 0.3s;
+    border-radius: 1px;
+}
+
+.Nav-links > li > a:hover + .anchorLine{
+    width: 100%;
+}
+
+/* ---End of Navigator Section--- */
+/* Hero Section */
+
+.Hero-page{
+    background: #282C33;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+}
+
+.Hero-page > .hero-div{
+    margin: auto 0;
+    padding-top: 180px;
+    margin-left: 15vw;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Hero-page > .hero-div > h1, .Hero-page > div > h2{
+    margin-bottom: 15px;
+    color: white;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Hero-page > .hero-div > h1{
+    font-size: 32px;
+    width: 95%;
+}
+
+.Hero-page > .hero-div > h2{
+    font-size: 16px;
+    color: gray;
+}
+
+.Hero-page span{
+    color: #78B9DD;
+}
+
+.Hero-page button{
+    width: 140px;
+    height: 30px;
+    background: none;
+    border: 2px solid #78B9DD;
+    color: white;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.Hero-page button:hover{
+    border: 2px solid #808080;
+    background: gray;
+}
+
+.mouse_icon{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mouse_icon > div{
+    margin: 5px auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mouse{
+    background: url(Icons/mouse.svg) no-repeat;
+    height: 35px;
+    width: 25px;
+    animation: 1.5s Mouse infinite;
+}
+
+.Arrow{
+    background: url(Icons/Arrow_Down.svg) no-repeat;
+    height: 22px;
+    width: 22px;
+    margin: 0;
+    animation: 1.5s Arrow infinite;
+}
+
+@keyframes Mouse {
+    0%{
+        transform: translateY(2px);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+}
+
+@keyframes Arrow {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+/* ---End of Hero Section--- */
+/* About Section */
+
+/* ---End of About Section--- */
+
+/* Work Page */
+/* ---End of Work Section--- */
+/* Footer Section */
+
+/* ---End of Footer Section--- */
+
+@media screen and (max-width:900px){
+    .Nav-links, .Line-cont{
+        display: none;
+    }
+
+    .Hero-page > .hero-div{
+        margin-left: 10vw;
+    }
+
+}
