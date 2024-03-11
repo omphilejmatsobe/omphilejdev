@@ -321,6 +321,12 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
+.article-container{
+  background: red;
+  height: 3rem;
+  width: 3rem;
+}
+
 .project-img {
   height: 3rem;
   width: 3rem;
