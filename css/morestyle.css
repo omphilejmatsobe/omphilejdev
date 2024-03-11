@@ -312,19 +312,13 @@ article .icon {
   position: relative;
 }
 
-.color-container {
+#color-container {
   border-color: rgb(163, 163, 163);
   transition: 0.3s ease;
 }
 
-.color-container:hover{
+#color-container:hover{
   background: rgb(250, 250, 250);
-}
-
-.details-container > .article-container{
-  background: red;
-  height: 3rem;
-  width: 3rem;
 }
 
 .project-img {
