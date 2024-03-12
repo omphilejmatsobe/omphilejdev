@@ -230,7 +230,7 @@ section {
 }
 
 .cv > a > h1{
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   cursor: pointer;
   opacity: 0.5;
@@ -387,4 +387,18 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* JS */
+
+.reveal{
+  position: relative;
+  transform: translateY(175px);
+  transition: all 1.5s ease;
+  opacity: 0;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }

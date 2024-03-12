@@ -50,12 +50,12 @@
           <a href="#Footer"><button>Contact Me!!</button></a>
       </div>
       <div class="mouse_icon">
-        <div class="mouse"></div>
-        <div class="Arrow"></div>
+        <div class="mouse"><a href="#about"></a></div>
+        <div class="Arrow"><a href="#about"></a></div>
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="reveal">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -106,7 +106,8 @@
         </div>
       </div>
     </section>
-    <section id="experience">
+
+    <section id="experience" class="reveal">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div class="experience-details-container">
@@ -234,7 +235,8 @@
         </div>
       </div>
     </section>
-    <section id="projects">
+
+    <section id="projects" class="reveal">
       <p class="section__text__p1">Browse My Work</p>
       <h1 class="title">Portfolio</h1>
       <div class="experience-details-container">
@@ -275,12 +277,11 @@
               Check out my the awesome games I've worked on, with exciting and entertaining mechanics. 
             </p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <a href="https://omphilejmatsobe.itch.io/" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-color-2 project-btn">
                 View
               </button>
+            </a>
             </div>
           </div>
 
@@ -310,7 +311,8 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+
+    <section id="contact" class="reveal">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -334,10 +336,11 @@
     </section>
   </main>
 
-    <footer id="Footer">
+    <footer id="Footer" >
       <p>Copyright &#169; 2023 OmphileJDev. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./reveal.js"></script>
+
   </body>
 </html>
