@@ -262,9 +262,22 @@ section {
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   margin: auto 0;
+  animation: aboutPic 4s infinite ease;
+}
+
+@keyframes aboutPic {
+  0%{
+    transform: translateY(120px);
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+  100%{
+    transform: translateY(120px);
+  }
 }
 
 /* EXPERIENCE SECTION */

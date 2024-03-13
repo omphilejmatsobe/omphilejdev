@@ -50,8 +50,8 @@
   }
 
   .section__pic-container {
-    width: 275px;
-    height: 275px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto 2rem;
   }
 
@@ -114,8 +114,21 @@
 
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 30vw;
     justify-content: center;
+    animation: aboutPic 4s infinite ease;
+  }
+
+  @keyframes aboutPic {
+    0%{
+      transform: translateY(80px);
+    }
+    50%{
+      transform: translateY(-20px);
+    }
+    100%{
+      transform: translateY(80px);
+    }
   }
 
   .section__text__p2 {
