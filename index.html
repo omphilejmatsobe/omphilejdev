@@ -9,6 +9,8 @@
     <meta name="author" content="Omphile J Matsobe">
 
     <title>Thank You For Visiting!</title>
+    <link rel="icon" href="./css/Icons//icon.png" type="image/icon type">
+
     <link rel="stylesheet" href="./css/morestyle.css">
     <link rel="stylesheet" href="./css/mediaqueries.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -24,10 +26,11 @@
           <div>
               <div class="Line-div"></div>
               <div class="Line-Img"><a href="https://github.com/omphilejmatsobe" target="_blank" rel="noopener noreferrer"><div class="github"></div></a></div>
-              <div class="Line-Img"><a href="https://discord.com/users/omphilej#5193"target="_blank" alt="discord_server" rel="noopener noreferrer"><div class="discord"></div></a></div>
+              <div class="Line-Img"><a href="https://discord.com/users/omphilej#5193" target="_blank" alt="discord_server" rel="noopener noreferrer"><div class="discord"></div></a></div>
               <div class="Line-Img"><a href="https://medium.com/@omphilejmatsobe" target="_blank" alt="medium" rel="noopener noreferrer"><div class="twitter"></div></a></div>
           </div>
       </div>
+  
       <div class="Logo_Image">
           <a a href="index.html" alt="home">
               <div class="Logo-O_back"></div>
@@ -40,6 +43,9 @@
           <li class="Blogs"><a href="https://medium.com/@omphilejmatsobe" target="_blank" alt="medium" rel="noopener noreferrer">Blogs</a><div class="anchorLine"></div></li>
           <li class="Contact"><a href="index.html#contact">Contact</a><div class="anchorLine"></div></li>
       </ul>
+  </nav>
+
+  <nav class="Nav">
   </nav>
 
   <main>
@@ -59,12 +65,14 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container" id="About">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+        <div class="section__pic-container">
+          <div id="renderObject">
+            <div id="object"></div>
+            <!-- img
+            src="./assets/experience.png"
+            alt="PC Headman"
+          -->
+          </div>
         </div>
         <div class="about-details-container">
           <div class="about-containers">
@@ -79,7 +87,7 @@
             </div>
             <div class="details-container">
               <img
-                src="./assets/education.png"
+                src="./assets/skill.png"
                 alt="Education icon"
                 class="icon"
               />
@@ -89,7 +97,7 @@
           </div>
           <div class="text-container">
             <p>
-              Welcome to my corner of the digital world! As a software engineer, 
+              Hi, I am Omphile J Matsobe. Welcome to my corner of the digital world! I'm a software engineer and
               I specialize in crafting software applications, digital games, and essential system tools. 
               Proficient more in C, Python, and Linux, I thrive on the challenge of building innovative software solutions.
               <br/>
@@ -113,7 +121,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Backend Engineering</h2>
+            <h2 class="experience-sub-title">Software Engineering</h2>
             <div class="article-container">
               <article>
                 <img
@@ -340,6 +348,8 @@
     </footer>
 
     <script src="./reveal.js"></script>
-
+    <script src="./changetitle.js"></script>
+    <script type="module" src="./main.js"></script>
+  
   </body>
 </html>

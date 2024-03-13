@@ -236,7 +236,7 @@ section {
   opacity: 0.5;
 }
 
-.cv:hover div{
+.cv > a:hover  + .cd > div{
   width: 30px;
 }
 
