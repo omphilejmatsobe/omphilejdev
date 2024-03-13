@@ -262,8 +262,11 @@ section {
 }
 
 .section__pic-container {
-  height: 200px;
-  width: 200px;
+  min-height: 300px;
+  min-width: 300px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   margin: auto 0;
   animation: aboutPic 4s infinite ease;
 }
@@ -279,6 +282,20 @@ section {
     transform: translateY(120px);
   }
 }
+.section__pic-container > div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-pic-img{
+  width: 60%;
+  height: 60%;
+  margin: auto;
+}
+
 
 /* EXPERIENCE SECTION */
 
