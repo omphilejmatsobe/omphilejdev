@@ -1,16 +1,17 @@
-const [toggle, setActiveToggle] = useState("Active");
-const [toggleIcon, setActiveIcon] = useState('closedIcon');
+
+var toggleNav = document.getElementById('toggleNav');
+var toggle = false;
 
 function toggle()
 {
-    if (toggle == 'Active')
+    if (toggle == True)
     {
-        setActiveToggle('inActive')
-        setActiveIcon('closedIcon');
+        toggle.classList.add('.active');
     }
-    else
+    else if (toggle == False)
     {
-        setActiveToggle('Active')
-        setActiveIcon('openIcon');
+        toggle.classList.remove('.active');
     }
 }
+
+export default toggle;

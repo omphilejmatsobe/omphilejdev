@@ -32,6 +32,22 @@ a{
     }
 }
 
+#toggleNav{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: blue;
+    z-index: 3;
+    transition: 0.5s ease;
+}
+.toggleNav{
+    transform: translateY(100%);
+}
+
+.toggleNav.active{
+    transform: translateY(0);
+}
+
 .Line-cont{
     position: absolute;
     width: 30px;
