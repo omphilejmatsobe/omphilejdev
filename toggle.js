@@ -7,10 +7,12 @@ function toggle()
     if (toggle == True)
     {
         toggle.classList.add('.active');
+        console.log('On');
     }
     else if (toggle == False)
     {
         toggle.classList.remove('.active');
+        console.log('off');
     }
 }
 

@@ -32,6 +32,24 @@ a{
     }
 }
 
+.toggleIcon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    display: none;
+    cursor: pointer;
+}
+
+.toggleIcon > div{
+    width: 30px;
+    height: 2px;
+    margin: 5px 0;
+    background: #808080;
+}
+
 #toggleNav{
     position: fixed;
     width: 100%;
@@ -335,5 +353,9 @@ a{
 
     .Logo_Image{
         margin-right: auto;
+    }
+
+    .toggleIcon{
+        display: block;
     }
 }
