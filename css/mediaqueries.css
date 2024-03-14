@@ -50,12 +50,15 @@
   }
 
   .section__pic-container {
-    min-height: 250px;
-    min-width: 250px;
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
-    padding: 100px 0;
+    padding-top: 50px;
+
+  }
+
+  .section__pic-container > img{
+    height: 90%;
   }
 
   .about-containers {
@@ -116,23 +119,11 @@
   }
 
   .section__pic-container {
-    width: 20vw;
-    height: 20vw;
+    width: auto;
+    height: 45vw;
     justify-content: center;
-    animation: aboutPic 4s infinite ease;
 }
 
-@keyframes aboutPic {
-  0%{
-    transform: translateY(80px);
-  }
-  50%{
-    transform: translateY(-10px);
-  }
-  100%{
-    transform: translateY(80px);
-  }
-}
   .section__text__p2 {
     font-size: 1.25rem;
   }
