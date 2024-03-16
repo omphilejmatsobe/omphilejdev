@@ -136,7 +136,12 @@
     text-align: justify;
   }
 
-  #experience, #projects{
+  #experience
+  {
     margin-top: 60px;
+  }
+  
+  #projects{
+    margin-top: 40px;
   }
 }
