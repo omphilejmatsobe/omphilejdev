@@ -36,14 +36,29 @@ a{
 }
 
 .toggleIcon{
-    width: 50px;
-    height: 50px;
+    margin-right: 15px;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-content: center;
     display: none;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.toggleIcon.active{
+    transform: rotateZ(90deg );
+
+}
+
+.toggleIcon.active .lineTwo{
+    transform: rotateZ(60deg) translateX(1px) translateY(9px);
+}
+
+.toggleIcon.active .lineThree{
+    transform: rotateZ(-60deg) translateX(5px) translateY(6px);
 }
 
 .toggleIcon > div{
@@ -51,6 +66,7 @@ a{
     height: 2px;
     margin: 5px 0;
     background: #808080;
+    transition: 0.5s;
 }
 
 #toggleNav{
@@ -60,7 +76,18 @@ a{
     height: 100vh;
     transition: 0.5s;
     z-index: 2;
-    background: rgb(33, 147, 254);
+    background: rgb(18, 77, 133);
+}
+
+#toggleNav li{
+    list-style: none;
+    margin: 22px 0;
+}
+
+#toggleNav a{
+    text-decoration: none;
+    color: rgb(232, 229, 229);
+    font-size: 30px;
 }
 
 .toggleNav{
@@ -349,6 +376,11 @@ a{
 /* ---End of Footer Section--- */
 
 @media screen and (max-width:900px){
+    .Nav {
+        height: fit-content;
+        padding-top: 25px;
+    }
+
     .Nav-links, .Line-cont{
         display: none;
     }
@@ -359,7 +391,7 @@ a{
 
     .Logo_Image{
         margin-right: auto;
-        margin-bottom: 15px;
+
     }
 
     .toggleIcon{
