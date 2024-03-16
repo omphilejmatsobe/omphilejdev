@@ -378,7 +378,7 @@ a{
 @media screen and (max-width:900px){
     .Nav {
         height: fit-content;
-        padding-top: 25px;
+        padding-top: 22px;
     }
 
     .Nav-links, .Line-cont{
