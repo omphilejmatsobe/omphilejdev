@@ -31,19 +31,19 @@
           </div>
       </div>
   
-      <div class="Logo_Image">
+      <div class="Logo_Image" onClick="offToggle()">
           <a a href="index.html" alt="home">
               <div class="Logo-O_back"></div>
               <div class="Logo-O"></div>
           </a>
       </div>
       <ul class="Nav-links">
-          <li class="AboutLink"><a href="index.html#About">About</a><div class="anchorLine"></div></li>
-          <li class="Portfolio"><a a href="index.html#projects">Portfolio</a><div class="anchorLine"></div></li>
+          <li class="AboutLink"><a href="index.html#about">About</a><div class="anchorLine"></div></li>
+          <li class="Portfolio"><a href="index.html#projects">Portfolio</a><div class="anchorLine"></div></li>
           <li class="Blogs"><a href="https://medium.com/@omphilejmatsobe" target="_blank" alt="medium" rel="noopener noreferrer">Blogs</a><div class="anchorLine"></div></li>
           <li class="Contact"><a href="index.html#contact">Contact</a><div class="anchorLine"></div></li>
       </ul>
-      <div href="javascript:void(0);" class="toggleIcon" onClick="toggle()">
+      <div class="toggleIcon" onClick="toggle()">
         <div></div>
         <div></div>
         <div></div>
@@ -51,8 +51,12 @@
   </nav>
 
   <nav id="toggleNav" class="toggleNav">
-    <div></div>
     <ul>
+      <li><a href="index.html" onClick="offToggle()">Home</a></li>
+      <li><a href="index.html#about" onClick="offToggle()">About</a></li>
+      <li><a href="index.html#projects" onClick="offToggle()">Portfolio</a></li>
+      <li><a href="https://medium.com/@omphilejmatsobe" onClick="offToggle()" target="_blank" alt="medium" rel="noopener noreferrer">Blog</a></li>
+      <li><a href="index.html#contact" onClick="offToggle()">Contact</a></li>
     </ul>
   </nav>
 

@@ -51,12 +51,15 @@ a{
 }
 
 #toggleNav{
+    top: 0;
     position: fixed;
     width: 100%;
     height: 100vh;
+    transition: 0.5s;
+    z-index: 2;
+    background: rgb(33, 147, 254);
 }
 
-/*
 .toggleNav{
     transform: translateY(100%);
 }
@@ -64,7 +67,7 @@ a{
 .toggleNav.active{
     transform: translateY(0);
 }
-*/
+
 .Line-cont{
     position: absolute;
     width: 30px;

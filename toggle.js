@@ -1,19 +1,28 @@
-
+var toggler = false;
 var toggleNav = document.getElementById('toggleNav');
-var toggle = false;
 
 function toggle()
 {
-    if (toggle == True)
+    if (toggler == true)
     {
-        toggle.classList.add('.active');
-        console.log('On');
-    }
-    else if (toggle == False)
-    {
-        toggle.classList.remove('.active');
+        toggleNav.classList.remove('active');
         console.log('off');
+        toggler = false;
+    }
+    else if (toggler == false)
+    {
+        toggleNav.classList.add('active');
+        console.log('on');
+        toggler = true;
     }
 }
 
-export default toggle;
+function offToggle()
+{
+    if (toggler == true)
+    {
+        toggleNav.classList.remove('active');
+        console.log('off');
+        toggler = false;
+    }
+}
