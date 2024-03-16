@@ -135,4 +135,8 @@
   .text-container {
     text-align: justify;
   }
+
+  #experience, #projects{
+    margin-top: 60px;
+  }
 }
