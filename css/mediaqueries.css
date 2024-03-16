@@ -145,3 +145,9 @@
     margin-top: 40px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  #mouse{
+    display: none;
+  }
+}
