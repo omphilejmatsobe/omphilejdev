@@ -46,16 +46,11 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(78, 77, 77);
   text-decoration: none;
   text-decoration-color: white;
-}
-
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  transition: 0.5s;
+  font-size: 18px;
 }
 
 .logo {

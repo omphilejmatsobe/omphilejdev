@@ -213,6 +213,10 @@ a{
     margin: auto;
 }
 
+#navLinks.color > li > a{
+    color: #191b1f;
+}
+
 .anchorLine{
     width: 0%;
     height: 1px;
@@ -222,7 +226,7 @@ a{
     border-radius: 1px;
 }
 
-.Nav-links > li > a:hover + .anchorLine{
+a:hover + .anchorLine {
     width: 100%;
 }
 
