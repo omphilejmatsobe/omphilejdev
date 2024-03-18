@@ -1,4 +1,3 @@
-
 const firstTitle = "OmphileJDev Portfolio.";
 const secondTitle = "Thank you for visiting!"
 
