@@ -1,4 +1,4 @@
-const firstTitle = "Omphile Matsobe: Software Engineer & Game Developer.";
+const firstTitle = "Omphile J Matsobe: Software Engineer & Game Developer.";
 const secondTitle = "Thank you for visiting!"
 
 function first()
