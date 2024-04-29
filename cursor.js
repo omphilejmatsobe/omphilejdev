@@ -16,6 +16,6 @@
         outline.animate({
             top: `${posY}px`,
             left: `${posX}px`
-        }, {duration: 4000, fill: "forwards"})
+        }, {duration: 3000, fill: "forwards"})
     }
     )

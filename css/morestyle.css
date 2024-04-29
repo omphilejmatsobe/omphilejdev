@@ -59,7 +59,7 @@ a {
 }
 
 .logo:hover {
-  cursor: default;
+  
 }
 
 /* SECTIONS */
@@ -151,10 +151,6 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
 
 .btn-color-1,
 .btn-color-2:hover {
@@ -311,10 +307,6 @@ article {
   gap: 0.5rem;
 }
 
-article .icon {
-  cursor: default;
-}
-
 /* PROJECTS SECTION */
 
 #projects {
@@ -341,9 +333,9 @@ article .icon {
 }
 
 .project-btn {
-  cursor: pointer;
   color: black;
   border-color: rgb(163, 163, 163);
+  cursor: none;
 }
 
 /* CONTACT */
@@ -377,10 +369,6 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
 }
 
 .email-icon {

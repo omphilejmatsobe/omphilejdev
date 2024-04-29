@@ -14,7 +14,14 @@ body{
 
 a{
     text-decoration: none;
+    cursor: none;
 }
+
+/* when div2 is hovered make div1 purple */
+body:has(a:hover) .cursorOutline {
+    height: 55px;
+    width: 55px;
+  }
 
 .cursor{
     width: 5px;
@@ -26,6 +33,7 @@ a{
     width: 33px;
     height: 33px;
     border: 2px solid rgb(152, 151, 151);
+    transition: 0.5s;
   }
   
   .cursor, .cursorOutline{
@@ -37,6 +45,16 @@ a{
     z-index: 2;
     pointer-events: none;
   }
+
+  ::-moz-selection .cursorOutline { /* Code for Firefox */
+    width: 50px;
+    height: 50px;
+    }
+    
+    ::selection .cursorOutline {
+    width: 50px;
+    height: 50px;
+    }
 
 /* Navigator Section */
 
@@ -69,7 +87,6 @@ a{
     justify-items: center;
     align-content: center;
     display: none;
-    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -149,7 +166,6 @@ a{
     margin: 0 auto;
     margin-top: 10px;
     transition: 0.5s;
-    cursor: pointer;
 }
 
 .Line-Img:hover{
@@ -189,7 +205,6 @@ a{
 .Logo-O, .Logo-O_back{
     height: 45px;
     width: 45px;
-    cursor: pointer;
     position: absolute;
     left: 0;
     transition: 0.4s ease;
@@ -227,7 +242,6 @@ a{
 
 .Nav-links > li > a{
     color: rgb(188, 186, 186);
-    cursor: pointer;
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
     font-style: normal;
@@ -323,7 +337,6 @@ a:hover + .anchorLine {
     font-weight: 500;
     font-style: normal;
     opacity: 0.7;
-    cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 
@@ -366,7 +379,6 @@ a:hover + .anchorLine {
     width: 22px;
     margin: 0;
     animation: 1.5s Arrow infinite;
-    cursor: pointer;
 }
 
 @keyframes Mouse {
