@@ -9,7 +9,6 @@ body{
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
-    cursor: none;
 }
 
 a{
@@ -18,43 +17,49 @@ a{
 }
 
 /* when div2 is hovered make div1 purple */
-body:has(a:hover) .cursorOutline {
-    height: 55px;
-    width: 55px;
-  }
-
-.cursor{
-    width: 5px;
-    height: 5px;
-    background: rgb(152, 151, 151);
-  }
-  
-  .cursorOutline{
-    width: 33px;
-    height: 33px;
-    border: 2px solid rgb(152, 151, 151);
-    transition: 0.5s;
-  }
-  
-  .cursor, .cursorOutline{
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 2;
-    pointer-events: none;
-  }
-
-  ::-moz-selection .cursorOutline { /* Code for Firefox */
-    width: 50px;
-    height: 50px;
+@media screen and (min-width:1000px){
+    body{
+        cursor: none;
     }
     
-    ::selection .cursorOutline {
-    width: 50px;
-    height: 50px;
-    }
+    body:has(a:hover) .cursorOutline {
+        height: 55px;
+        width: 55px;
+      }
+    
+    .cursor{
+        width: 5px;
+        height: 5px;
+        background: rgb(152, 151, 151);
+      }
+      
+      .cursorOutline{
+        width: 33px;
+        height: 33px;
+        border: 2px solid rgb(152, 151, 151);
+        transition: 0.5s;
+      }
+      
+      .cursor, .cursorOutline{
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 2;
+        pointer-events: none;
+      }
+    
+      ::-moz-selection .cursorOutline { /* Code for Firefox */
+        width: 50px;
+        height: 50px;
+        }
+        
+        ::selection .cursorOutline {
+        width: 50px;
+        height: 50px;
+        }  
+}
 
 /* Navigator Section */
 
