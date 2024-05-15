@@ -18,11 +18,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 
   </head>
+
   <body>
+
+
     <div class='cursor'></div>
     <div class='cursorOutline'></div>
 
-    <nav class="Nav">
+    <nav class="Nav" id="hide">
       <div class="Line-cont">
           <div>
               <div class="Line-div"></div>
@@ -32,7 +35,7 @@
           </div>
       </div>
   
-      <div class="Logo_Image" onClick="offToggle()">
+      <div class="Logo_Image" onClick="offToggle()" id="hide">
           <a a href="index.html" alt="home">
               <div class="Logo-O_back"></div>
               <div class="Logo-O"></div>
@@ -63,7 +66,7 @@
     </ul>
   </nav>
 
-  <main>
+  <main id="main">
     <section class="Hero-page">
       <div class="hero-div">
          <h1>Hi, I am <span>Omphile.</span> I’m a <span>Software Engineer</span></h1>
@@ -352,15 +355,16 @@
     </section>
   </main>
 
-    <footer id="Footer" >
-      <p>Copyright &#169; 2023 OmphileJDev. All Rights Reserved.</p>
-    </footer>
+  <footer id="Footer" >
+    <p>Copyright &#169; 2023 OmphileJDev. All Rights Reserved.</p>
+  </footer>
 
     <script src="./toggle.js"></script>
     <script src="./reveal.js"></script>
     <script src="./changetitle.js"></script>
     <script src="./cursor.js"></script>
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./loader.js"></script>
   
   </body>
 </html>

@@ -16,6 +16,10 @@ a{
     cursor: none;
 }
 
+.loaderContent h1{
+    color: white;
+}
+
 /* when div2 is hovered make div1 purple */
 @media screen and (min-width:1000px){
     body{
