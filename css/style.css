@@ -221,10 +221,11 @@ a{
 
 .Logo-O{
     background: url(Logo/logo.svg) no-repeat;
+    left: 7px;
 }
 
 .Logo-O:hover{
-    left: 7px;
+    left: 0px;
 }
 
 .Logo-O_back{
@@ -255,7 +256,7 @@ a{
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
     transition: 0.3s;
     margin: auto;
@@ -282,7 +283,7 @@ a:hover + .anchorLine {
 /* Hero Section */
 
 .Hero-page{
-    background: #282C33;
+    background: #0c0c0c;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -322,8 +323,9 @@ a:hover + .anchorLine {
 }
 
 .Hero-page > .hero-div > h1{
-    font-size: 32px;
-    width: 95%;
+    font-size: 50px;
+    width: 100%;
+    font-weight: 800;
 }
 
 .Hero-page > .hero-div > h2{

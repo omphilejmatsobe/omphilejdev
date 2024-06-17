@@ -8,7 +8,7 @@ function first()
     setTimeout(() =>
     {
         second();
-    }, 15000);
+    }, 17000);
 }
 
 function second()
