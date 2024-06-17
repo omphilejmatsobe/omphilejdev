@@ -199,7 +199,6 @@ a{
 }
 
 .Logo_Image{
-    opacity: 0.8;
     margin-left: 10vw;
     display: flex;
     flex-wrap: wrap;
@@ -338,10 +337,9 @@ a:hover + .anchorLine {
 }
 
 .Hero-page button{
-    width: 140px;
     height: 30px;
     background: none;
-    border: 2px solid #78B9DD;
+    border: none;
     color: white;
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
@@ -351,14 +349,20 @@ a:hover + .anchorLine {
     transition: 0.4s ease-in-out;
 }
 
+.buttonLine{
+    width: 40px;
+    height: 1px;
+    background: white;
+    transition: 0.5s ease;
+}
+
+.Hero-page a:hover .buttonLine{
+    width: 90px;
+}
+
 .logoText{
     color: white;
     font: 10px;
-}
-
-.Hero-page button:hover{
-    border: 2px solid #808080;
-    background: gray;
 }
 
 .mouse_icon{
