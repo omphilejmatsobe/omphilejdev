@@ -220,12 +220,12 @@ a{
 }
 
 .Logo-O{
-    background: url(Logo/logo.svg) no-repeat;
-    left: 7px;
+    background: url(Logo/Logo_White.png) no-repeat;
+    left: 0px;
 }
 
 .Logo-O:hover{
-    left: 0px;
+    left: 7px;
 }
 
 .Logo-O_back{
@@ -296,7 +296,7 @@ a:hover + .anchorLine {
     margin: auto 0;
     padding-top: 180px;
     margin-left: 15vw;
-    max-width: 530px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     animation: heroDiv 1.75s ease;
@@ -323,9 +323,9 @@ a:hover + .anchorLine {
 }
 
 .Hero-page > .hero-div > h1{
-    font-size: 50px;
-    width: 100%;
+    font-size: 65px;
     font-weight: 800;
+    letter-spacing: -5px;
 }
 
 .Hero-page > .hero-div > h2{
