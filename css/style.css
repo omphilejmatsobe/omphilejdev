@@ -459,3 +459,13 @@ a:hover + .anchorLine {
         display: block;
     }
 }
+
+@media screen and (max-width: 600px) {
+
+    .Hero-page > .hero-div > h1{
+      font-size: 35px;
+      font-weight: 800;
+      letter-spacing: -5px;
+      width: 300px;
+  }
+}
