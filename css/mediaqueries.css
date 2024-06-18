@@ -143,6 +143,10 @@
   #projects{
     margin-top: 40px;
   }
+
+  .Hero-page > .hero-div > h1{
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 320px) {
