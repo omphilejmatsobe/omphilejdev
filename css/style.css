@@ -1,5 +1,3 @@
-
-
 html {
     scroll-behavior: smooth;
   }
@@ -452,7 +450,6 @@ a:hover + .anchorLine {
 
     .Logo_Image{
         margin-right: auto;
-
     }
 
     .toggleIcon{
@@ -461,14 +458,13 @@ a:hover + .anchorLine {
 }
 
 @media screen and (max-width: 600px) {
-
     .Hero-page > .hero-div > h1{
       font-size: 35px;
       width: 300px;
       letter-spacing: 0px;
-  }
+    }
 
   .Hero-page > .hero-div{
     padding-top: 80px;
-}
+    }
 }
