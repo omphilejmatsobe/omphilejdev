@@ -467,4 +467,8 @@ a:hover + .anchorLine {
       width: 300px;
       letter-spacing: 0px;
   }
+
+  .Hero-page > .hero-div{
+    padding-top: 80px;
+}
 }
